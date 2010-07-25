@@ -1,0 +1,8 @@
+.heading
+  %h1= "Data entry page"
+
+  - form_tag do
+    = text_field_tag :name
+
+- content_for :script do
+  = javascript_include_tag "ui/clients"
